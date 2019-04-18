@@ -1,0 +1,15 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+#wrapper #navigation {
+  background-color: #44c2ea;
+}
+#wrapper #navigation .nav-item a {
+  font-size: 1rem;
+  color: white;
+  font-weight: 300;
+  padding: 20px 12px;
+}
+
+/*# sourceMappingURL=zetes.css.map */

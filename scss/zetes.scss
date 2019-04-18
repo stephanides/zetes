@@ -1,0 +1,18 @@
+$zetes-color:rgb(68,194,234);
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+#wrapper{
+  #navigation{
+    background-color: $zetes-color;
+    .nav-item{
+      a{
+        font-size: 1rem;
+        color:white;
+        font-weight: 300;
+        padding: 20px 12px;
+      }
+    }
+  }
+}
