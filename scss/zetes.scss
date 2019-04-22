@@ -3,15 +3,45 @@ $zetes-color:rgb(68,194,234);
 *{
   font-family: 'Poppins', sans-serif;
 }
+h3{
+  font-size: 36px;
+  font-weight: 300;
+}
 #wrapper{
   #navigation{
-    background-color: $zetes-color;
+    .navbar{
+      background-color: $zetes-color;
+    }
     .nav-item{
       a{
         font-size: 1rem;
         color:white;
         font-weight: 300;
         padding: 20px 12px;
+      }
+    }
+  }
+  #o-nas{
+    position:relative;
+    top: 60px;
+    .container-fluid{
+      background-image:url(../images/background.png);
+      padding:0;
+      height: 100vh;
+      min-height: 700px;
+      background-size: cover;
+      background-position: center center;
+      img{
+        width: 100%;
+      }
+    }
+    .container{
+      position:absolute;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      bottom: 210px;
+       .headerText{
+        
       }
     }
   }

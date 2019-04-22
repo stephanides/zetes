@@ -2,7 +2,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-#wrapper #navigation {
+h3 {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+#wrapper #navigation .navbar {
   background-color: #44c2ea;
 }
 #wrapper #navigation .nav-item a {
@@ -11,5 +16,26 @@
   font-weight: 300;
   padding: 20px 12px;
 }
+#wrapper #o-nas {
+  position: relative;
+  top: 60px;
+}
+#wrapper #o-nas .container-fluid {
+  background-image: url(../images/background.png);
+  padding: 0;
+  height: 100vh;
+  min-height: 700px;
+  background-size: cover;
+  background-position: center center;
+}
+#wrapper #o-nas .container-fluid img {
+  width: 100%;
+}
+#wrapper #o-nas .container {
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  bottom: 210px;
+}
 
-/*# sourceMappingURL=zetes.css.map */
+/*# sourceMappingURL=css/zetes.css.map */
