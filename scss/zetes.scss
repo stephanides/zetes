@@ -1,11 +1,38 @@
 $zetes-color:rgb(68,194,234);
+$break-small: 320px;
+$break-440px: 440px;
+$break-msmall:662px;
+$break-mobile:768px;
+$break-medium: 992px;
+$break-large: 1200px;
+$break-smLarge: 1440px;
 
 *{
   font-family: 'Poppins', sans-serif;
 }
 h3{
-  font-size: 36px;
-  font-weight: 300;
+  font-size: 36px !important;
+  font-weight: 300 !important;
+  @media screen and (max-width: $break-medium) {
+    font-size: 32px !important;
+  }
+  @media screen and (max-width: $break-mobile) {
+    padding-left: 20px;
+  }
+}
+p{
+  font-size: 18px !important;
+  color: rgb(74, 74, 74) !important;
+   font-weight: 300 !important;
+   @media screen and (max-width: $break-medium) {
+      font-size: 14px !important;
+    }
+    @media screen and (max-width: $break-mobile) {
+    padding-left: 20px;
+  }
+}
+body{
+  overflow-x: hidden; 
 }
 #wrapper{
   #navigation{
@@ -18,7 +45,13 @@ h3{
         color:white;
         font-weight: 300;
         padding: 20px 12px;
+        @media screen and (max-width: $break-mobile) {
+          padding-left: 20px;
+        }
       }
+    }
+    .dropdown-item{
+        color:rgb(74, 74, 74) !important;
     }
   }
   #o-nas{
@@ -28,9 +61,15 @@ h3{
       background-image:url(../images/background.png);
       padding:0;
       height: 100vh;
-      min-height: 700px;
+      min-height: 750px;
       background-size: cover;
       background-position: center center;
+      background-repeat: no-repeat;
+      @media screen and (max-width: $break-mobile) {
+        background-size: cover;
+        background-position-x: 70%;
+        background-position-y: -120px;
+      }
       img{
         width: 100%;
       }
@@ -41,8 +80,230 @@ h3{
       transform: translateX(-50%);
       bottom: 210px;
        .headerText{
-        
+        @media screen and (max-width: $break-medium) {
+          top: 30px;
+        }
+        @media screen and (max-width: $break-mobile) {
+          top: 60px;
+        }
+        a{
+          background-color: #44c2ea;
+          color:white;
+          font-size: 14px;
+          padding: 10px 15px;
+          text-decoration: none;
+          border-radius: 4px;
+          top: 20px;
+          position: relative;
+          @media screen and (max-width: $break-mobile) {
+            margin-left: 20px;
+          }
+        }
       }
     }
+  }
+  #ciel-projektu{
+    margin-top: 20px;
+    img{
+      width: 100%;
+      border-bottom-left-radius: 90px;
+      border-top-right-radius: 90px;
+      @media screen and (max-width: $break-mobile) {
+        margin-top: 30px;
+      }
+    }
+    h3{
+      margin-bottom: 40px;
+      @media screen and (max-width: $break-mobile) {
+        text-align: left;
+        padding-left: 20px;
+      }
+    }
+    p{
+      padding-right: 40px;
+      @media screen and (max-width: $break-medium) {
+        margin-bottom: 0;
+      }
+      @media screen and (max-width: $break-mobile) {
+        text-align: left;
+        padding-left: 20px;
+      }
+    }
+  }
+  #bio-farma{
+    margin-top: 40px;
+    .container-fluid{
+      padding: 0;
+    }
+    p{
+      padding: 20px 20px;
+    }
+    h3{
+      text-align: center;
+      padding: 20px;
+    }
+    .bio-text{
+      position: absolute;
+      background-color: white;
+      top: 70%;
+      transform:translateY(-50%);
+      left: 0;
+      right: 0;
+      margin: auto;
+      @media screen and (max-width: $break-mobile) {
+        position: relative;
+        top: 100px;
+      }
+       @media screen and (max-width: $break-440px) {
+        top: 120px;
+      }
+      @media screen and (max-width: $break-smLarge) {
+        h3{
+          margin-bottom: 0;
+          padding: 10px;
+        }
+        p{
+          padding-top: 0;
+        }
+      }
+      @media screen and (max-width: $break-mobile) {
+        h3{
+          margin-bottom: 0;
+          padding: 20px;
+          text-align: left;
+        }
+        p{
+          padding-top: 0;
+          text-align: left;
+          padding-left: 20px;
+        }
+      }
+    }
+    img{
+      @media screen and (max-width: $break-mobile) {
+        width: 150% !important;
+        left: -15%;
+        position: relative;
+      }
+    }
+  }
+}
+#chov-dobytka{
+  margin-top: 60px;
+  @media screen and (max-width: $break-mobile) {
+    margin-top: 0px;
+  }
+  img{
+    width: 100%;
+     border-bottom-left-radius: 90px;
+      border-top-right-radius: 90px;
+      @media screen and (max-width: $break-medium) {
+        margin-top: 60px;
+      }
+  }
+  h3{
+    margin-top: 40px;
+
+  }
+  h5{
+    color: rgb(74, 74, 74) !important;
+    font-weight: 300 !important;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    @media screen and (max-width: $break-medium) {
+      margin-top: 20px;
+      padding-bottom: 20px;
+    }
+    @media screen and (max-width: $break-mobile) {
+      padding-left: 20px;
+    }
+  }
+  p{
+    @media screen and (max-width: $break-medium) {
+      margin-bottom: 0;
+    }
+  }
+}
+#gallery{
+  margin-top: 60px;
+  h3{
+    padding-bottom: 30px;
+  }
+  img{
+    @media screen and (max-width: $break-large) {
+      min-height: 160px;
+      max-height: 160px;
+    }
+    @media screen and (max-width: $break-medium) {
+      min-height: 120px;
+      max-height: 120px;
+    }
+    @media screen and (max-width: $break-mobile) {
+      min-height: 220px;
+      max-height: 220px;
+      margin-top: 12px;
+    }
+  }
+  .row{
+    @media screen and (max-width: $break-mobile) {
+      margin-top: 0px !important;
+    }
+  }
+}
+#contact{
+  margin-top: 60px;
+  .col-md-6{
+    @media screen and (max-width: $break-mobile) {
+      margin-top: 30px !important;
+    }
+  }
+}
+
+.zoom{
+  overflow: hidden;
+
+  &:hover{
+    img{
+      transform:scale(1.3);
+    }
+  }
+  img{
+    width: 100%;
+    max-height: 170px;
+    transition: all .5s ease-in-out;
+  }
+}
+#map{
+  height: 400px;
+  width: 100%;
+}
+#footer{
+  background-color: #4a4a4a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  .col-12{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+      color:white !important;
+    }
+  }
+  img{
+     @media screen and (max-width: $break-mobile) {
+      width: 130px;
+    }
+  }
+}
+#verejne-obstaravanie{
+  margin-top: 160px;
+}
+.dropdown-menu{
+  @media screen and (max-width: $break-medium) {
+      border:none !important;
+    }
+  .dropdown-item{
+    padding: 10px 10px !important;
   }
 }
